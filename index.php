@@ -2,11 +2,10 @@
 
 # get the mongo db name out of the env
   $mongo_url = parse_url(getenv("MONGODB_URI"));
-  echo $dbname = str_replace("/", "", $mongo_url["path"]);
+   $dbname = str_replace("/", "", $mongo_url["path"]);
 
  
-
-die;
+ 
   
   $dbname = str_replace("/", "", $mongo_url["path"]);
 
